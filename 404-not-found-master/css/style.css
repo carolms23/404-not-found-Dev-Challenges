@@ -1,8 +1,90 @@
-header{
-    font-family: 'Inconsolata', monospace;
-    font-size:24px;
-    text-transform: uppercase;
+body {
+  font-family: "Space Mono", monospace;
+  margin-left: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
-.scare{
-    width:50%;
+header {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #333333;
+  letter-spacing: -0.08em;
+  margin-top: 1.5rem;
+  justify-self: flex-start;
+}
+.scare {
+  margin: 4rem 0;
+  width: 100%;
+}
+.badNews {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #333333;
+  letter-spacing: -0.035em;
+  line-height: 4.4rem;
+  margin-right: 0.06rem;
+}
+.advice {
+  margin-top: 1.8rem;
+  font-size: 1.125rem;
+  color: #4f4f4f;
+}
+.back {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+  padding: 1.5rem 2.7rem 1.5rem 2.7rem;
+  margin-top: 4.125rem;
+  margin-right: 1rem;
+}
+@media (min-width: 1200px) {
+  body {
+    margin-left: 5rem;
+  }
+  header {
+    margin-top: 2.5rem;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }
+  .scare {
+    grid-column: 1;
+    width: 80%;
+  }
+  .content-badNews {
+    grid-column: 2;
+  }
+  .badNews {
+    font-size: 4rem;
+  }
+  .advice {
+    margin-top: 2.25rem;
+    font-size: 1.5rem;
+    margin-right: 15rem;
+  }
+}
+footer {
+  font-family: "Montserrat", sans-serif;
+  margin: 7rem 0 1.5rem 0;
+  color: #bdbdbd;
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+  justify-self: flex-start;
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 15rem;
+  }
 }
